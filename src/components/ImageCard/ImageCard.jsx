@@ -5,8 +5,8 @@ export default function ImageCard({ data, onImageClick }) {
   };
 
   return (
-    <div onClick={handleClick}>
-      <img src={data.urls.small} alt="photo" className={css.photo} />
+    <div>
+      <img src={data.urls.small} alt="photo" className={css.photo} onClick={handleClick}/>
     </div>
   );
 }
